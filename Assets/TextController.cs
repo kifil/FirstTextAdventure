@@ -259,7 +259,11 @@ public class TextController : MonoBehaviour {
 	void state_courtyard(){
 		text.text = "You swipe the janitor's keycard at the top of the door. After a second the door beeps and opens up."+
 			"You feel fresh air rush against you as you step outside. Freedom at last! \n\n"+
-			"CONGRATULATIONS! YOU ESCAPED FROM PRIIISSSOOONNN!";
+			"CONGRATULATIONS! YOU ESCAPED FROM PRIIISSSOOONNN! \n\n"+
+			"Press R to Restart and relive your daring escape";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.cell;
+		}
 	}
 	
 }
