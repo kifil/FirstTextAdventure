@@ -61,6 +61,7 @@ public class TextController : MonoBehaviour {
 		
 	}
 	
+	#region state handler methods
 	//game start
 	void state_cell(){
 		text.text = "You wake up trapped in a prison cell. "+
@@ -265,5 +266,6 @@ public class TextController : MonoBehaviour {
 			myState = States.cell;
 		}
 	}
+	#endregion
 	
 }
